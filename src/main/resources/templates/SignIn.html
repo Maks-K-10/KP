@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://getbootstrap.com/docs/4.5/examples/sign-in/signin.css   " rel="stylesheet">
 </head>
-<body>
-$END$
+<header th:insert="blocks/header :: header"></header>
+<body class="text-center">
+
+<div th:if="${param.error}">
+    Invalid username and password.
+</div>
+<div th:if="${param.logout}">
+    You have been logged out.
+</div>
+
+<form class="form-signin" th:action="@{/SignIn}" method="post">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label class="sr-only">Email address</label>
+    <input type="text" name="username" class="form-control" placeholder="Email address" required="" autofocus="">
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+</form>
+
+
 </body>
 </html>
+
