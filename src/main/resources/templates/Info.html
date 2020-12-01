@@ -6,10 +6,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
 <header th:insert="blocks/header :: header"></header>
+<body>
 <div class="container mt-5">
-    <h6>Info page</h6>
+    <h6>All clients</h6>
+    <div th:each="el : ${clients}" class="alert alert-info mt-2">
+        <h3 th:text="${el.customerName}"/>
+    </div>
 </div>
 </body>
 
