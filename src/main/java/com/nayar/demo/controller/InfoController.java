@@ -13,7 +13,7 @@ public class InfoController {
     @Autowired
     private ClientRepository clientRepository;
 
-    @GetMapping("/info")
+    @GetMapping("/Info")
     public String home(Model model) {
         Iterable<Customer> clients = clientRepository.findAll();
         model.addAttribute("clients", clients);

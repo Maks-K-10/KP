@@ -28,6 +28,16 @@ public class Customer {
     public Customer() {
     }
 
+    public Customer(String customerSurname, String customerName, String customerSecondName, String groupName, String phoneNumber, String login, String customerPassword) {
+        this.customerSurname = customerSurname;
+        this.customerName = customerName;
+        this.customerSecondName = customerSecondName;
+        this.groupName = groupName;
+        this.phoneNumber = phoneNumber;
+        this.login = login;
+        this.customerPassword = customerPassword;
+    }
+
     public Calendar getPaymentDay() {
         return paymentDay;
     }
