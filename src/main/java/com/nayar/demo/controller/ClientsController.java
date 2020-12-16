@@ -8,16 +8,16 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class InfoController {
+public class ClientsController {
 
     @Autowired
     private ClientRepository clientRepository;
 
-    @GetMapping("/Info")
+    @GetMapping("/Clients")
     public String home(Model model) {
         Iterable<Customer> clients = clientRepository.findAll();
         model.addAttribute("clients", clients);
-        return "Info";
+        return "Clients";
     }
 
 }

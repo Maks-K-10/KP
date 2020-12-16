@@ -37,6 +37,8 @@
                 <td><p th:text="${el.getCustomerSecondName()}"></p></td>
                 <td><p th:text="${el.getGroupName()}"></p></td>
                 <td><p th:text="${el.getPhoneNumber()}"></p></td>
+                <td><a th:href="'/Edit/' + ${el.id}">Редактировать</a></td>
+
 
             </tr>
             </tbody>
