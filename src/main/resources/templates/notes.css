@@ -1,0 +1,50 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.groups-checkboxes-container {
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.groups-checkboxes-container label {
+    margin-right: 10px;
+}
+
+.notes {
+    margin: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.note {
+    box-shadow: 4px 5px 12px -3px #000000;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.note:hover {
+    box-shadow: 4px 5px 20px -3px #000000;
+    position: relative;
+    top: -2px;
+}
+
+.note__buttons-container {
+    margin-top: 10px;
+    display: flex;
+}
+
+.note__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.note__buttons-container button:nth-child(n+2) {
+    margin-left: 10px;
+}

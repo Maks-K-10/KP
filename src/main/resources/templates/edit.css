@@ -1,0 +1,56 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form {
+    margin: 40px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+form input[type="checkbox"] {
+    margin: 0;
+    max-width: 20px;
+}
+
+form>div {
+    display: flex;
+    align-items: center;
+}
+
+form>div label {
+    width: 20%;
+}
+
+form>div input, form>div textarea {
+    width: 80%;
+}
+
+form .inline-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .inline-inputs div {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.submit-button-container button {
+    padding: 10px;
+}

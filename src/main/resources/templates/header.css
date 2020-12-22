@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: gray;
+    background-color: black;
+  }
+  
+  .header__icon-container {
+      color: white;
+  }
+  
+  .header__items ul {
+    display: flex;
+  }
+  
+  .header__items ul li {
+    padding: 20px 10px;
+  }
+  
+  .header__items ul li:hover, .header__item_active {
+      color: white;
+    text-decoration: underline;
+    transition: 1s;
+  }
+  
+  .table__head, .table-content__row {
+      display: flex;
+  }

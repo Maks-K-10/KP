@@ -2,12 +2,85 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Getting Started: Serving Web Content</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main-page.css">
+    <title>Document</title>
 </head>
 <body>
-<header th:insert="blocks/header :: header"></header>
-</body>
+<header class="header">
+    <div class="header__icon-container">
+        <h2><a href="/">Nayar</a></h2>
+    </div>
+    <div class="header__items">
+        <ul>
+            <li class="header__item_active"><a>Главная</a></li>
+            <li><a href="/Clients">Клиенты</a></li>
+            <li><a href="/CreateClient">Добавить клиента</a></li>
+            <li><a>Группы</a></li>
+            <li><a>Добавить группу</a></li>
+            <li><a>Объявления</a></li>
+            <li><a>Добавить объявление</a></li>
+            <li><a href="/SignIn">Вход</a></li>
+        </ul>
+    </div>
+</header>
 
+<main>
+    <section class="introduction">
+        <img src="http://nayar.by/images/Slide11.jpg" alt="img" />
+        <div class="section-content">
+            <h1>Клуб единоборств «НАЯР» - это не просто зал единоборств, это спортивное сообщество!</h1>
+            <p>Под руководством профессиональных тренеров вы сможете раскрыть Ваши способности и возможности в области боевых искусств, таких как ММА и Тайский бокс. А также добиться хорошей физической формы и развить все группы мышц, выносливость и координацию движений на занятиях по CrossFit.</p>
+            <p>Начать тренироваться может человек любого возраста и уровня подготовки!</p>
+        </div>
+    </section>
+    <section class="trainers">
+        <img src="http://nayar.by/templates/at_brand/css/Slider7R.jpg" alt="img" />
+        <div class="section-content">
+            <p>В клубе работают тренеры с высшим спортивным образованием и профессиональные спортсмены, которые подберут идеальный набор упражнений именно для вас. Они используют индивидуальный подход к каждому своему ученику, подбирают нагрузку, исходя из его физических возможностей, всегда поддерживают и дают ценные советы.</p>
+        </div>
+    </section>
+    <section class="conditions">
+        <img src="http://nayar.by/templates/at_brand/css/excellent.jpg" alt="img" />
+        <div class="section-content">
+            <p>Наш зал укомплектован самым современным и профессиональным оборудованием:</p>
+            <p>
+                - MMA клетка;<br/>
+                - татами (BUDO-NORD);<br/>
+                - большое количество боксёрских мешков, настенных подушек и разного вида груш;<br/>
+                - кроссфит зона с профессиональным спортивным инвентарём;<br/>
+                - гребные тренажеры CONCEPT 2;<br/>
+                - велотренажеры (air bike) Airdyne Schwinn;<br/>
+                - лыжные тренажёры с базой CONCEPT 2 SkiErg;<br/>
+                - две раздевалки со своими душевыми;<br/>
+                - приятный интерьер, зона отдыха (около ресепшена);<br/>
+                - инерционные беговые дорожки от Protrain CT.</p>
+            <p>Не верите? Убедитесь сами! Посетите наш зал не выходя из дома.</p>
+        </div>
+    </section>
+    <section class="work-for-you">
+        <img src="http://nayar.by/templates/at_brand/css/Forum.jpg" alt="img" />
+        <div class="section-content">
+            <p>Наши тренеры сделают всё, чтобы вы становились лучше и развивались. Они помогут вам добиться желаемых результатов. Приоритетные принципы нашего клуба – командный дух и взаимоуважение.</p>
+            <p>Мы стараемся выбрать самое удобное для вас время. Ниже вы можете ознакомиться с расписанием тренировок и ценой абонемента.</p>
+        </div>
+    </section>
+    <section class="equipment">
+        <img src="http://nayar.by/templates/at_brand/css/first-training.jpg" alt="img" />
+        <div class="section-content">
+            <p>
+                - Боксерские перчатки от 10 унций и выше<br/>
+                - Щитки (голень-стопа)<br/>
+                - Бинты<br/>
+                - Капа<br/>
+                - Борцовки (для групп MMA)<br/>
+                - Тренировочные шорты (без замков).</p>
+            <p>Для полной информации ознакомьтесь с правилами нашего клуба. </p>
+        </div>
+    </section>
+</main>
+</body>
 </html>
